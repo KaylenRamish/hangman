@@ -1,0 +1,26 @@
+.hangman-container {
+    text-align: center; /* Center align text within container */
+    margin: 20px; /* Add margin around container */
+  }
+  
+  .letter {
+    margin: 0 5px; /* Add space between letters */
+    font-size: 2rem; /* Increase font size for letters */
+  }
+  
+  .letter-buttons button {
+    margin: 5px; /* Add margin around buttons */
+    padding: 10px; /* Add padding inside buttons */
+  }
+  
+  .help {
+    margin-top: 20px; /* Add margin above help text */
+    font-size: 1.2rem; /* Increase font size for help text */
+  }
+  
+  .restart-button {
+    margin-top: 20px; /* Add margin above restart button */
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 1.2rem; /* Increase font size for button */
+  }
+  
