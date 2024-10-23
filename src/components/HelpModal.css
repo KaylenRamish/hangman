@@ -1,0 +1,44 @@
+/* src/components/HelpModal.css */
+
+.help-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .help-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .help-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .help-content p, .help-content ul {
+    text-align: left;
+  }
+  
+  .help-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .help-content button:hover {
+    background-color: #0056b3;
+  }
+  

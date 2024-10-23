@@ -1,15 +1,14 @@
 import React from 'react';
 
+// WordDisplay Component
 const WordDisplay = ({ word, guessedLetters }) => {
   return (
     <div className="word-display">
-      {word.split("").map((letter, index) =>
-        guessedLetters.includes(letter) ? (
-          <span key={index} className="letter">{letter}</span>
-        ) : (
-          <span key={index} className="blank" style={{ borderBottom: '2px solid black', margin: '0 5px' }}>&nbsp;</span>
-        )
-      )}
+      {word.split('').map((letter, index) => (
+        <span key={index}>
+          {guessedLetters.includes(letter.toUpperCase()) ? letter : '_'} {/* Show letter if guessed, else show underscore */}
+        </span>
+      ))}
     </div>
   );
 };

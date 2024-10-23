@@ -1,18 +1,18 @@
 import React from 'react';
 
-const AlphabetButtons = ({ handleGuess, guessedLetters }) => {
+// AlphabetButtons Component
+const AlphabetButtons = ({ letter, handleGuess, guessedLetters }) => {
+  // Determine if the letter has been guessed
+  const isDisabled = guessedLetters.includes(letter);
+
   return (
-    <div className="alphabet">
-      {'abcdefghijklmnopqrstuvwxyz'.split('').map(letter => (
-        <button
-          key={letter}
-          onClick={() => handleGuess(letter)}
-          disabled={guessedLetters.includes(letter)} // Disable button if already guessed
-        >
-          {letter.toUpperCase()}
-        </button>
-      ))}
-    </div>
+    <button 
+      onClick={() => handleGuess(letter)} 
+      disabled={isDisabled} // Disable button if letter is already guessed
+      className="alphabet-button"
+    >
+      {letter}
+    </button>
   );
 };
 

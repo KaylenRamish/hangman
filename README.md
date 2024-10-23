@@ -61,3 +61,11 @@ To install and run this project on your local machine, follow these steps:
 
    ```bash
    git clone <repository-url>
+
+2. **Install Node Modules** by running the following command in your terminal:
+
+   npm install
+
+3. **Run the game** by running the command:
+
+   npm start
